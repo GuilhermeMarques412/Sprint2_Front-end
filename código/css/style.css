@@ -1,0 +1,261 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== CABEÇALHO E MENU ===== */
+header {
+  background-color: #0077cc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+  border-bottom: 2px solid #ffdd57;
+}
+
+/* ===== HERO SECTION (tela inicial) ===== */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?auto=format&fit=crop&w=1400&q=80") 
+              center/cover no-repeat;
+  color: white;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero h2 {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background-color: #ffdd57;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffe67a;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== CONTEÚDO PADRÃO ===== */
+.content {
+  width: 85%;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+  color: #0077cc;
+  margin-bottom: 20px;
+  border-left: 6px solid #0077cc;
+  padding-left: 10px;
+}
+
+.content p, .content li {
+  font-size: 1.05em;
+}
+
+/* ===== FORMULÁRIO DE CONTATO ===== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  width: 130px;
+  align-self: flex-end;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+
+/* ===== PÁGINA DE EQUIPE ===== */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.member {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.member h3 {
+  color: #0077cc;
+  margin-bottom: 8px;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 60px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Sprint 2 — melhorias técnicas sem mudar seu visual ===== */
+.skip-link{position:absolute;left:-999px;top:0;background:#111;color:#fff;padding:.5rem 1rem;border-radius:8px;z-index:9999}
+.skip-link:focus{left:1rem;top:1rem}
+.error{color:#b91c1c;font-size:.9rem}
+nav.open{display:block}
+@media (min-width:768px){
+  nav{display:block}
+}
+
+
+
+/* ===== Sprint 2 — Responsividade obrigatória (sem alterar o visual da S1) ===== */
+
+/* XS: phones (<=600px) */
+@media (max-width: 600px){
+  body{font-size: 15px}
+  .container{width: 92%}
+  nav ul{flex-direction: column; gap:.5rem}
+  .grid, .cards{grid-template-columns: 1fr !important}
+  img{max-width:100%; height:auto}
+}
+
+/* SM: >=600px */
+@media (min-width: 600px){
+  .cards{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:1rem}
+}
+
+/* MD: >=768px */
+@media (min-width: 768px){
+  .cards{grid-template-columns: repeat(3, minmax(0,1fr))}
+  .container{width: min(1100px, 90%)}
+}
+
+/* LG: >=992px */
+@media (min-width: 992px){
+  .container{width: min(1120px, 88%)}
+  .hero h1{font-size: 2.2rem}
+}
+
+/* XL: >=1300px */
+@media (min-width: 1300px){
+  body{font-size: 17px}
+  .hero h1{font-size: 2.6rem}
+}
