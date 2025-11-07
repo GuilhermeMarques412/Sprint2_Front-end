@@ -21,3 +21,5 @@ Abra `index.html` no navegador.
 ## Versionamento
 Crie o repositório **Sprint-2-Front** e faça os commits frequentes durante a evolução.
 
+## Github
+https://github.com/GuilhermeMarques412/Sprint2_Front-end.git
